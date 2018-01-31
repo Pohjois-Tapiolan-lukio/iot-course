@@ -4,6 +4,9 @@ Tässä opetetaan kuinka luodaan Git-repository, jolla tulet julkaisemaan
 tekemäsi koodit. Kirjoitetaan myös lyhyt ohjelma, Gitin toimintojen
 demonstroimiseksi.
 
+Käytännössä voit seurata tätä ohjetta melkein jokaisessa tehtävässä, korvaten
+vain kohdan **Koodin lisääminen** sen tehtävän ohjeistetulla koodilla.
+
 ### Gitin asennus
 Linuxilla on yleensä Git valmiiksi asennettuna. Linkit asennusohjelmiin:
 - [Windows](https://git-scm.com/download/win)
@@ -66,7 +69,9 @@ tietää kenen nimissä tehdä asioita.
 ### Git-repositoryn päivittäminen
 1. Nyt kun olemme lisänneet koodia, voimme tarkistaa mitä muutoksia Git
 näkee projektissamme komennolla `git status`. Tämä komento kertoo tämänhetkiset
-muutokset repositoryssämme.
+muutokset repositoryssämme. Mikäli et näe muutoksia, varmista että kutsut
+komentoa kansiossa `perusteet-01`, ja että siellä on kohdassa
+**Koodin lisääminen** luotu `main.py`.
 2. Lisätäksemme muutokset Gittiin, kutsutaan aluksi komentoa `git add -A`.
 Mikäli nyt kutsut komennon `git status`, huomaat että muutokset ovat eivät
 ole enää "untracked", vaan "commitattavia muutoksia".

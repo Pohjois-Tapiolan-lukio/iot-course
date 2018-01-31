@@ -1,4 +1,4 @@
-# Robotiikka ja IoT-sovellukset, IoT-osio
+# Kurssimateriaalia: IoT-sovellukset
 Tervetuloa Robotiikka ja IoT-sovellukset -kurssin IoT-osioon.
 
 Tästä dokumentista löydät materiaalit jonkin ohjattuun oppimiseen.
