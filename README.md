@@ -11,9 +11,10 @@
 ## <a name="esittely"></a>Esittely
 Tervetuloa Robotiikka ja IoT-sovellukset -kurssin IoT-osioon.
 
-Tästä dokumentista löydät materiaalit jonkin ohjattuun oppimiseen.  On
-suositeltavaa käydä [Perusteet-osio](#perusteet) läpi, ja sen jälkeen
-siirtyä siihen osioon joka kuulostaa mielenkiintoisimmalta.
+Tästä dokumentista löydät linkit kurssin IoT-osion
+oppimateriaaleihin. On suositeltavaa käydä
+[Perusteet-osio](#perusteet) läpi, ja sen jälkeen siirtyä siihen
+osioon joka kuulostaa mielenkiintoisimmalta.
 
 Huomio: esimerkkien soveltaminen ja omien (aiheellisten) projektien
 toteuttaminen valmiiden projektien sijaan on myös suositeltua.

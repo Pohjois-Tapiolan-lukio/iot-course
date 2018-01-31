@@ -11,8 +11,8 @@ hakemistoosi. Mikäli et muista miten tämä tapahtuu, voit luntata
 seuraavassa kahdessa menee yhteen tiedostoon, joten luo vielä tiedosto
 `main.py`.
 
-Jotta voisimme ottaa ollenkaan yhteyttä koulun palvelimeen, pitää
-muutama asia varmistaa. Palvelimeen saa yhteyden vain espoo_oppilas
+Jotta voisimme ottaa ollenkaan yhteyttä koulun palvelimeen, pitää yksi
+tärkeä asia varmistaa. Palvelimeen saa yhteyden vain espoo_oppilas
 verkon kautta, joten varmista että Raspberrysi on siinä verkossa.
 
 ### Requests-kirjasto
@@ -38,7 +38,7 @@ muuttujan `vastaus`-muuttujan sisältä (`vastaus.text` siis palauttaa
 vastauksen tekstimuodossa).
 
 ```python
-response = requests.get("http://iot.olarinlukio.fi/heippa")
+response = requests.get("http://iot.olarinlukio.fi:5000/heippa")
 print(response.text)
 ```
 
@@ -50,16 +50,15 @@ ohjelmoitu vastaamaan "Moikka!" kun sille lähetetään kutsu joka loppuu
 ### Hieman termistöä
 #### <a name="kirjasto"></a>Kirjasto
 Ohjelmoinnissa "kirjastolla" viitataan valmiiksi ohjelmoituihin
-kokonaisuuksiin joita voi käyttää helposti hyödykseen ja säästyä
+kokonaisuuksiin, joita voi käyttää helposti hyödykseen ja säästyä
 suurelta määrältä koodin kirjoittamista. Tämän kurssin tapauksessa
 käytämme paljon `requests`-kirjastoa, joka tekee pyyntöjen
 lähettämisestä palvelimelle hyvin yksinkertaista.
 
-#### <a name="client"></a>Client
-Kun puhutaan verkkoyhteyksistä, clientillä viitataan johonkin
-itsenäiseen koneeseen joka voi olla esimerkiksi Raspberry Pi, sinun
-läppärisi tai kännykkäsi. Se on laite joka lähettää pyyntöjä
-palvelimille.
+#### <a name="request"></a>Pyyntö
+Pyynnöllä viitataan yksinkertaisesti clientin lähettämään viestiin
+palvelimelle. Tälläisen voi luoda requests-kirjastolla esimerkiksi
+funktiolla `requests.get()`.
 
 #### <a name="server"></a>Palvelin / server
 Palvelimella (/serverillä) viitataan tietokoneeseen, joka odottaa että
@@ -70,7 +69,8 @@ haluat Googlen etusivun, joten se rakentaa nettisivun vaatimat tiedot,
 ja lähettää ne sinulle. Seuraavaksi selaimesi lukisi nämä tiedot ja
 rakentaisi Googlen etusivun.
 
-#### <a name="request"></a>Pyyntö
-Pyynnöllä viitataan yksinkertaisesti clientin lähettämään viestiin
-palvelimelle. Tälläisen voi luoda requests-kirjastolla esimerkiksi
-funktiolla `requests.get()`.
+#### <a name="client"></a>Client
+Kun puhutaan verkkoyhteyksistä, clientillä viitataan johonkin
+itsenäiseen koneeseen joka voi olla esimerkiksi Raspberry Pi, sinun
+läppärisi tai kännykkäsi. Se on laite joka lähettää pyyntöjä
+palvelimille.
