@@ -8,15 +8,18 @@ siirtyä siihen osioon joka kuulostaa mielenkiintoisimmalta.
 Huomio: esimerkkien soveltaminen ja omien (aiheellisten) projektien
 toteuttaminen valmiiden projektien sijaan on myös suositeltua.
 
+## Pakollinen osio
 ### Perusteet
 Tässä osiossa käydään läpi tiedonsiirron perusteet, joka toimii kaikkien
 IoT-projektien pohjatietona. Tietoa siirretään Raspberry Pi-tietokoneesta
 koulun palvelimelle, jossa tieto säilytetään mahdollista myöhempää
 analyysia varten.
-1. [Tiedonsiirron perusteita](perusteet-01/)
-2. [Ensimmäinen taulukko, ensimmäiset datat](perusteet-02/)
-3. [Ensimmäinen käytännön IoT-sovellus](perusteet-03/)
+1. [Projektin luominen](perusteet-01/)
+2. [Tiedonsiirron perusteita](perusteet-02/)
+3. [Ensimmäinen taulukko, ensimmäiset datat](perusteet-03/)
+4. [Ensimmäinen käytännön IoT-sovellus](perusteet-04/)
 
+## Vapaavalintaiset osiot
 ### Arduino ja IoT
 Tässä osiossa on projekteja joissa käytetään Arduino-mikrokontrollereita
 datankeräysalustana. Arduinot ovat pienitehoisia tietokoneita joita yleensä
