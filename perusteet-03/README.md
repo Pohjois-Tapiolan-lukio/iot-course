@@ -23,17 +23,16 @@ request("heippa")
 
 ### Taulukon luonti
 IoT palvelimen API:lla voi luoda uuden taulukon seuraavanlaisella
-kutsulla: `api/v1/<nimi>/create/<sarakkeet>` Missä `<nimi>` on
+kutsulla: `api/v1/<nimi>/create/<sarakkeet>` missä `<nimi>` on
 taulukon nimi ja `<sarakkeet>` ovat sarakkeiden nimiä puolipilkuilla
-erotettuna, eli jos haluaisit alla olevan taulukon, kirjottaisit
-sarakkeisiksi `aika;lampotila`. Eli esimerkiksi:
+erotettuna. Alla olevan taulukon voisi siis luoda seuraavasti:
 `api/v1/opiskelija123n_taulukko/create/aika;lampotila`
 
 Taulukkooon voi lisätä uuden rivin dataa kutsulla
 `api/v1/<nimi>/insert/<arvot>` missä `<nimi>` on jälleen taulukon
-nimi, ja `<arvot>` ovat lisättävät arvot samalla lailla muotoillusti
-kuin luodessa taulukkoa. Esimerkiksi tämän taulukon toisen rivin voisi
-lisätä seuraavalla kutsulla:
+nimi, ja `<arvot>` ovat lisättävät arvot (samalla lailla muotoillusti
+kuin luodessa taulukkoa, puolipilkuilla erotettu). Esimerkiksi tämän
+taulukon toisen rivin voisi lisätä seuraavalla kutsulla:
 `api/v1/opiskelija123n_taulukko/insert/1;23`
 
 | aika | lampotila |
@@ -42,8 +41,22 @@ lisätä seuraavalla kutsulla:
 | 1    | 23        |
 | 2    | 24        |
 
-Tehdään nyt hyvin yksinkertainen ohjelma, joka luo joka toinen sekunti
-uuden datapisteen, nostaen arvoa yhdellä joka kerta.
+#### Lisämateriaalia: Hetkinen, mikä ihmeen api/v1/??
+Saatoit pistää merkille hieman erikoisen tavan jolla API-kutsut
+alkavat. Jokainen API-kutsu alkaa `api/v1/`, jotta API-kutsut
+erottuisivat muista mahdollisista sivuista palvelimella. Tämän
+palvelimen tapauksessa API on käytännössä ainoa asia joka siellä on,
+mutta usein saman osoitteen alla voisi olla paljon muutakin, ja
+`api/v1/` erottaa tämän, kuin kyseessä olisi kokonaan oma
+hakemistonsa. Toki tämän voisi tehdä yksinkertaisesti jo pelkästään
+aloittamalla kutsut `api/`:lla, mutta mikäli API-kutsuja muutetaan
+tulevaisuudessa suuressa määrin, voidaan alkaa käyttämään
+`api/v2/`-alkua, ja vanhat koodit jotka käyttävät `api/v1/`:stä
+jatkavat toimintaa.
+
+### Pienimuotoinen demo
+Tehdään nyt hyvin yksinkertainen ohjelma, joka luo kerran kahdessa
+sekunnissa uuden datapisteen, nostaen arvoa yhdellä joka kerta.
 
 Aluksi importataan `sleep`-funktio, jotta voimme ajoittaa
 toistolausekkeen. Lisää siis koodin alkuun:
@@ -85,10 +98,17 @@ toistolausekkeen sisällä):
 ```
 
 Nyt voit selaimellasi mennä osoitteeseen
-`http://iot.olarinlukio.fi/api/v1/<taulukko_nimi>/print` ja näet
+`http://iot.olarinlukio.fi:5000/api/v1/<taulukko_nimi>/print` ja näet
 lähetetyn datan. Muista jälleen muuttaa linkissä `<taulukko_nimi>`
-oman taulukkosi nimeksi.
+oman taulukkosi nimeksi. Datan pitäisi näyttää jotakuinkin tältä:
 
+*opiskelija123n_taulukko*
+| nouseva_numero |
+|----------------|
+| 1              |
+| 2              |
+| 3              |
+| 4              |
 
 ---
 ### Hieman termistöä

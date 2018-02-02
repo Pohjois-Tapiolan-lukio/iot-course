@@ -1,14 +1,14 @@
 # Tiedonsiirron perusteita
-Perusteet-tehtävissä 2-4 luodaan pienimuotoinen demo jossa siirretään
-tietoa Raspberry Pi:stä palvelimelle. Tässä ensimmäisessä osassa
-luodaan Git-repository ja tutkitaan tietoliikenteen toimintaa
+Perusteet-tehtävissä 2 ja 3 luodaan pienimuotoinen demo jossa
+siirretään tietoa Raspberry Pi:stä palvelimelle. Tässä ensimmäisessä
+osassa luodaan Git-repository ja tutkitaan tietoliikenteen toimintaa
 Pythonissa requests-kirjaston avulla.
 
 ### Valmistelut
 Luo uusi Git-repo nimeltä "heippa-internet" ja kloonaa se `iot-kurssi`
 hakemistoosi. Mikäli et muista miten tämä tapahtuu, voit luntata
 [tehtävästä 1](../perusteet-01/). Kaikki koodi tässä tehtävässä ja
-seuraavassa kahdessa menee yhteen tiedostoon, joten luo vielä tiedosto
+seuraavassa menee yhteen tiedostoon, joten luo vielä tiedosto
 `main.py`.
 
 Jotta voisimme ottaa ollenkaan yhteyttä koulun palvelimeen, pitää yksi
