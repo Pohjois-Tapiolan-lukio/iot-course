@@ -30,12 +30,12 @@ jatkaa heti itse asiaan.
 Ensimmäisenä tehdään vain yksinkertainen [pyyntö](#request) palvelimelle, ja
 katsotaan mitä sieltä tulee.
 
-Requests-kirjasto antaa meille funktion `requests.get()` jolla voimme
+Requests-kirjasto antaa meille funktion `requests.get("<osoite>")` jolla voimme
 lähettää pyyntöjä mihin tahansa osoitteeseen. Tämä funktio palauttaa
-[palvelimen](#server) vastauksen. Vastaus ei ole kuitenkaan suoraan
-tekstimuodossa, mutta saamme sen tekstimuotoon hakemalla `text`
-muuttujan `vastaus`-muuttujan sisältä (`vastaus.text` siis palauttaa
-vastauksen tekstimuodossa).
+[palvelimen](#server) vastauksen. Vastaus (`response`-muuttuja) ei 
+ole kuitenkaan suoraan tekstimuodossa, mutta saamme sen tekstimuotoon 
+hakemalla `text`in `response`-muuttujan sisältä (`response.text` siis 
+palauttaa vastauksen tekstimuodossa).
 
 ```python
 response = requests.get("http://iot.olarinlukio.fi:5000/heippa")
