@@ -28,7 +28,7 @@ taulukon nimi ja `<sarakkeet>` ovat sarakkeiden nimiä puolipilkuilla
 erotettuna. Alla olevan taulukon voisi siis luoda seuraavasti:
 `database/opiskelija123n_taulukko/create/aika;lampotila`
 
-Taulukkooon voi lisätä uuden rivin dataa kutsulla
+Taulukkoon voi lisätä uuden rivin dataa kutsulla
 `database/<nimi>/insert/<arvot>` missä `<nimi>` on jälleen taulukon
 nimi, ja `<arvot>` ovat lisättävät arvot (samalla lailla muotoillusti
 kuin luodessa taulukkoa, puolipilkuilla erotettu). Esimerkiksi tämän
@@ -89,7 +89,8 @@ Nyt voit selaimellasi mennä osoitteeseen
 lähetetyn datan. Muista jälleen muuttaa linkissä `<taulukko_nimi>`
 oman taulukkosi nimeksi. Datan pitäisi näyttää jotakuinkin tältä:
 
-*opiskelija123n_taulukko*
+**opiskelija123n_taulukko**
+
 | nouseva_numero |
 |----------------|
 | 1              |
