@@ -5,9 +5,9 @@ laitamme sinne vähän dataa.
 ### Request-funktio
 Jos lähtisimme nyt kirjoittelemaan lisää requests.get-kutsuja,
 saisimme kyllä ohjelman valmiiksi, mutta joutuisimme toistamaan
-iot.olarinlukio.fi hyvin paljon, ja itsensä toistaminen on
-ohjelmoinnissa huono asia. Muutetaan siis kaksi viimeistä riviä
-edellisestä tehtävästä omaksi funktiokseen:
+osoitetta `iot.olarinlukio.fi` hyvin paljon, ja itsensä 
+toistaminen on ohjelmoinnissa huono asia. Muutetaan siis kaksi 
+viimeistä riviä edellisestä tehtävästä omaksi funktiokseen:
 
 ```python
 def request(call):
@@ -23,17 +23,32 @@ request("heippa")
 
 ### Taulukon luonti
 IoT palvelimen API:lla voi luoda uuden taulukon seuraavanlaisella
-kutsulla: `database/<nimi>/create/<sarakkeet>` missä `<nimi>` on
-taulukon nimi ja `<sarakkeet>` ovat sarakkeiden nimiä puolipilkuilla
-erotettuna. Alla olevan taulukon voisi siis luoda seuraavasti:
-`database/opiskelija123n_taulukko/create/aika;lampotila`
+kutsulla: 
 
-Taulukkooon voi lisätä uuden rivin dataa kutsulla
-`database/<nimi>/insert/<arvot>` missä `<nimi>` on jälleen taulukon
-nimi, ja `<arvot>` ovat lisättävät arvot (samalla lailla muotoillusti
-kuin luodessa taulukkoa, puolipilkuilla erotettu). Esimerkiksi tämän
-taulukon toisen rivin voisi lisätä seuraavalla kutsulla:
-`database/opiskelija123n_taulukko/insert/1;23`
+```python
+request("database/<nimi>/create/<sarakkeet>")
+```
+
+...missä `<nimi>` on
+taulukon nimi ja `<sarakkeet>` ovat sarakkeiden nimiä puolipilkuilla
+(`;`) erotettuna. Alla olevan taulukon voisi siis luoda seuraavasti:
+
+```python
+request("database/opiskelija123n_taulukko/create/aika;lampotila")
+```
+
+Taulukkoon voi lisätä uuden rivin dataa melkein samalla kutsulla,
+kunhan korvaa `create`:n `insert`:llä ja arvojen nimet niiden
+arvoilla. Esimerkiksi tämän taulukon sisällöt voisi luoda
+seuraavalla koodinpätkällä:
+
+```python
+request("database/opiskelija123n_taulukko/insert/0;23")
+request("database/opiskelija123n_taulukko/insert/1;23")
+request("database/opiskelija123n_taulukko/insert/2;24")
+```
+
+#### opiskelija123n_taulukko
 
 | aika | lampotila |
 |------|-----------|
@@ -63,6 +78,9 @@ while True:
     sleep(2)
 ```
 
+Tämä siis printtaa joka toinen sekunti numeron, joka kasvaa 
+yhdellä joka kerta.
+
 Nyt siirrytään tiedonsiirto-osaan. Lisää aiemman osion alkuun kutsu
 jolla luodaan uusi taulukko (muista vaihtaa koodissa `<taulukko_nimi>`
 joksikin omaksi nimeksi):
@@ -89,7 +107,8 @@ Nyt voit selaimellasi mennä osoitteeseen
 lähetetyn datan. Muista jälleen muuttaa linkissä `<taulukko_nimi>`
 oman taulukkosi nimeksi. Datan pitäisi näyttää jotakuinkin tältä:
 
-*opiskelija123n_taulukko*
+#### opiskelija123n_taulukko
+
 | nouseva_numero |
 |----------------|
 | 1              |

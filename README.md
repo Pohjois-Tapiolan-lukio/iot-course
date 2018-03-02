@@ -1,12 +1,12 @@
 # Kurssimateriaalia: IoT-sovellukset
 ## Sisällyslettelo
 * [Esittely](#esittely)
-* [Pakollinen osio](#pakollinen)
+* [Alkuun](#alkuun)
   * [Perusteet](#perusteet)
-* [Vapaavalintaiset osiot](#vapaavalintaiset)
+* [Projekteja](#projekteja)
   * [Arduino ja IoT](#arduino)
   * [SenseHAT-sensorit](#sensehat)
-  * [Tiedonsiirto ja analyysi](#iot)
+  * [Blynk](#blynk)
 
 ## <a name="esittely"></a>Esittely
 Tervetuloa Robotiikka ja IoT-sovellukset -kurssin IoT-osioon.
@@ -19,7 +19,7 @@ osioon joka kuulostaa mielenkiintoisimmalta.
 Huomio: esimerkkien soveltaminen ja omien (aiheellisten) projektien
 toteuttaminen valmiiden projektien sijaan on myös suositeltua.
 
-## <a name="pakollinen"></a>Pakollinen osio
+## <a name="alkuun"></a>Alkuun
 ### <a name="perusteet"></a>Perusteet
 Tässä osiossa käydään läpi tiedonsiirron perusteet, joka toimii
 kaikkien IoT-projektien pohjatietona. Tietoa siirretään Raspberry
@@ -32,7 +32,12 @@ mahdollista myöhempää analyysia varten.
 [KOMENTORIVI.md](KOMENTORIVI.md) on hyödyllinen resurssi komentoriviin
 tutustumisessa.
 
-## <a name="vapaavalintaiset"></a>Vapaavalintaiset osiot
+## <a name="projekteja"></a>Projekteja
+Tässä on lista erilaisia projekteja, joissa on valmista koodia
+erilaisia sensoreita varten. Lue koodia, rakenna mielenkiintoiselta
+vaikuttavat sensorit, ja lähetä data IoT-palvelimelle myöhempää
+analyysia varten.
+
 ### <a name="arduino"></a>Arduino/ulkoiset sensorit ja IoT
 Tässä osiossa on projekteja joissa käytetään
 Arduino-mikrokontrollereita datankeräysalustana. Arduinot ovat
@@ -41,18 +46,29 @@ nappien, sensorien, tai muun raudan kanssa toimimiseen. *Arduinot ovat
 erityisen hyödyllisiä esimerkiksi sellaisten sensorien kanssa, jotka
 välittävät datansa analogisesti, sillä Raspberry Pi:n omat pinit ovat
 kaikki digitaalisia, kun Arduinoissa on analogisiakin.*
+
+Tässä Arduinon kanssa toteutettavia projekteja. Lue, kokeile, tutki
+mielenkiinnon mukaan.
 - [Liiketunnistin](https://github.com/Pohjois-Tapiolan-lukio/raspberry_pi-projects/tree/master/hardware_GPIO/liiketunnistin)
 - [Ultraääni-sensori](https://github.com/Pohjois-Tapiolan-lukio/raspberry_pi-projects/tree/master/hardware_GPIO/ultraani)
-- [Telegram-selfie](https://github.com/Pohjois-Tapiolan-lukio/raspberry_pi-projects/tree/master/picamera)
+- [Breakout](https://github.com/Pohjois-Tapiolan-lukio/raspberry_pi-projects/tree/master/Arduino_analog_interface)
+- [Sensori-demoja](https://github.com/Pohjois-Tapiolan-lukio/raspberry_pi-projects/tree/master/hardware_GPIO)
 
 ### <a name="sensehat"></a>SenseHAT-sensorit
 Tässä osiossa on projekteja joissa käytetään SenseHAT-lisäosan
 sensoreita datan keräämistä ja mahdollisesti esittämistä varten.
 SenseHAT on Raspberry Pi:n päälle asetettava "shieldi" jossa on 8x8
 LED-näyttö ja paljon ympäristöä tutkivia sensoreja.
-- [Ympäristösensorit](https://github.com/Pohjois-Tapiolan-lukio/sensehat-materials/blob/master/iot-sensor/iot_sensor.py)
 
-### <a name="iot"></a>Tiedonsiirto ja analyysi
-Tässä osiossa on projekteja jotka keskittyvät hyvin vähän datan
-keräämiseen.  Datan keräämisen sijaan tässä perehdytään tarkemmin
-tiedonsiirtoon ja erityisesti datan analysointiin Pythonilla.
+Tässä SenseHAT:n kanssa toteutettavia projekteja. Lue, kokeile, tutki
+mielenkiinnon mukaan.
+- [Ympäristösensorit](https://github.com/Pohjois-Tapiolan-lukio/sensehat-materials/blob/master/iot-sensor/iot_sensor.py)
+- [SenseHAT-demoja](https://github.com/Pohjois-Tapiolan-lukio/raspberry_pi-projects/tree/master/Sense-HAT)
+
+### <a name="blynk"></a>Blynk
+Blynk on IoT-alusta jonka avulla voit ohjata sensoreitasi
+(Arduinoa tai Raspberryä) puhelimesi avulla.
+
+Tässä Blynkillä toteutettavia projekteja. Lue, kokeile, tutki
+mielenkiinnon mukaan.
+- [Perusteet](https://github.com/Pohjois-Tapiolan-lukio/raspberry_pi-projects/tree/master/Blynk_raspberry)

@@ -4,10 +4,10 @@ Tässä dokumentissa on hieman perusasioita komentorivin käytöstä ja toiminno
 ### Perusasioita
 - Komentorivi on aina jossain hakemistossa. Yleensä käynnistettäessä se avautuu
 käyttäjän kotihakemistoon, mutta usein tulet avaamaan sen tarkoituksellisesti
-johonkin tiettyyn hakemistoon. Hakemiston polku on vasemmalla kohdasta johon kirjoitat
-komennon.
+johonkin tiettyyn hakemistoon. Hakemiston polku lukee komentorivillä yleensä
+vasemmalla siitä kohdasta johon kirjoitat komennon.
 - Windows: Voit avata komentorivin tiettyyn hakemistoon avaamalla kyseisen hakemiston
-Resurssienhallinnassa, oikea-klikkaamalla valkoista aluetta, ja valitsemalla
+Resurssienhallinnassa, oikea-klikkaamalla valkoista "tyhjää" aluetta, ja valitsemalla
 "Git Bash Here" vaihtoehdon.
 - Mac ja Linux: Komentoriviä kutsutaan yleensä termeillä "pääte" ja "terminal"
 näillä alustoilla, joten kun etsit komentoriviä koneeltasi, käytä näitä
@@ -15,11 +15,11 @@ hakusanoina.
 - Joskus saatat nähdä komentojen perässä viivalla alkavia merkintöjä kuten
 `-r` tai `-m` tai `--amend`.
 Nämä ovat ns. flageja, joilla voidaan ohjata komennon käyttäytymistä.
-Yksinkertainen esimerkki on `-r` komennolla `rm`, joka yhden tiedoston
+Yksinkertainen esimerkki on `rm -r kansio/`, joka yhden tiedoston
 poistamisen sijaan käykin rekursiivisesti kansion läpi ja poistaa kaiken. Joskus
 flagit tarvitsevat lisätietoa, kuten esimerkiksi `git commit`:n `-m`-flag.
 Sitä käyttäessä `-m`:n jälkeen kirjoitetaan tekstiä heittomerkkien väliin, eli:
-`-m "Tekstiä"`.
+`git commit -m "Tekstiä"`.
 
 ### Yleisiä komentoja komentoriville
 - `ls`: Tuottaa listan tiedostoista ja hakemistoista tämänhetkisessä hakemistossa.
