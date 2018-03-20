@@ -29,4 +29,6 @@
 9. Ruudulla näkyvälle tyhjälle alueelle ilmestyy ohjeen seuraavissa osissa lisättävät IoT-laitteet, joten kannattaa jättää tämä sivu auki taustalle kun jatkat eteenpäin.
    ![](shiftr/kuva09.png)
 
-## Koodi
+## Rauta
+1. Ensimmäiseen Featheriin kiinnitä potentiometri, ja siirrä Featheriin koodi täältä: https://github.com/Pohjois-Tapiolan-lukio/arduino-projects/blob/master/shiftr_from_analog/shiftr_from_analog.ino
+2. Toiseen Featheriin kiinnitä servo, ja siirrä Featheriin koodi täältä: https://github.com/Pohjois-Tapiolan-lukio/arduino-projects/blob/master/shiftr_to_servo/shiftr_to_servo.ino
