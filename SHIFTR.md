@@ -1,32 +1,32 @@
 # Shiftr.io ohje
 
 ## Shiftr.io tilin luominen
-1. _
+1. Mene [Shiftr.io](https://shiftr.io):n sivuille, ja klikkaa "Sign up for free."
    ![](shiftr/kuva01.png)
 
-2. _
+2. Luo tili omilla tiedoillasi.
    ![](shiftr/kuva02.png)
 
 ## Shiftr.io namespacen luominen
-3. _
+3. Auenneessa sivussa voit luoda uuden nimiavaruuden.
    ![](shiftr/kuva03.png)
 
-4. _
+4. Anna nimiavaruudellesi jokin nimi, esimerkiksi "servo-projekti."
    ![](shiftr/kuva04.png)
 
-5. _
+5. Klikkaa "Namespace Settings."
    ![](shiftr/kuva05.png)
 
-6. _
+6. Klikkaa "Add token."
    ![](shiftr/kuva06.png)
 
-7. _
+7. Luo uusi token, jätä oletusnimet päälle.
    ![](shiftr/kuva07.png)
 
-8. _
+8. Avaa yläkulmasta "Dashboard."
    ![](shiftr/kuva08.png)
 
-9. _
+9. Ruudulla näkyvälle tyhjälle alueelle ilmestyy ohjeen seuraavissa osissa lisättävät IoT-laitteet, joten kannattaa jättää tämä sivu auki taustalle kun jatkat eteenpäin.
    ![](shiftr/kuva09.png)
 
 ## Koodi
