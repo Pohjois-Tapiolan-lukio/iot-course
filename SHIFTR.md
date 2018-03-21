@@ -39,6 +39,13 @@
    ![](shiftr/kuva09.png)
 
 ## Rauta
+Jotta voit siirtää koodit Adafruit Feather M0:n (Arduinon kaltaiset mikrokontrollerit joita tähän työhön käytetään), pitää asentaa kaksi asiaa Board Managerista. 
+
+1. Lisää seuraava URL Arduinon asetuksissa (File -> Preferences) olevaan "Additional Boards Manager URLs" kohtaan: https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+2. Etsi Board Managerista (Tools -> Board -> Board Manager) SAMD, ja asenna Arduinon ja Adafruitin boardit.
+
+---
+
 1. Ensimmäiseen Featheriin kiinnitä potentiometri, ja siirrä Featheriin koodi\* täältä: https://github.com/Pohjois-Tapiolan-lukio/arduino-projects/blob/master/shiftr_from_analog/shiftr_from_analog.ino
    - Liitännät:
    
