@@ -43,6 +43,7 @@ Jotta voit siirtää koodit Adafruit Feather M0:n (Arduinon kaltaiset mikrokontr
 
 1. Lisää seuraava URL Arduinon asetuksissa (File -> Preferences) olevaan "Additional Boards Manager URLs" kohtaan: https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 2. Etsi Board Managerista (Tools -> Board -> Board Manager) SAMD, ja asenna Arduinon ja Adafruitin boardit.
+3. Lisää (Sketch -> Include Library -> Manage Libraries) kaksi kirjastoa: Wifi101 (Arduino) ja MQTT (Joel Gaehwiler)
 
 ---
 
