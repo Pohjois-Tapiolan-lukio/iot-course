@@ -39,9 +39,18 @@
    ![](shiftr/kuva09.png)
 
 ## Rauta
-1. Ensimmäiseen Featheriin kiinnitä potentiometri, ja siirrä Featheriin koodi täältä: https://github.com/Pohjois-Tapiolan-lukio/arduino-projects/blob/master/shiftr_from_analog/shiftr_from_analog.ino
+1. Ensimmäiseen Featheriin kiinnitä potentiometri, ja siirrä Featheriin koodi\* täältä: https://github.com/Pohjois-Tapiolan-lukio/arduino-projects/blob/master/shiftr_from_analog/shiftr_from_analog.ino
    - Liitännät:
+   
      ![](shiftr/kuva-pins-01.png)
-2. Toiseen Featheriin kiinnitä servo, ja siirrä Featheriin koodi täältä: https://github.com/Pohjois-Tapiolan-lukio/arduino-projects/blob/master/shiftr_to_servo/shiftr_to_servo.ino
+2. Toiseen Featheriin kiinnitä servo, ja siirrä Featheriin koodi\* täältä: https://github.com/Pohjois-Tapiolan-lukio/arduino-projects/blob/master/shiftr_to_servo/shiftr_to_servo.ino
    - Liitännät:
+     
      ![](shiftr/kuva-pins-02.png)
+     
+\* Koodissa pitää vaihtaa seuraavat kohdat koodin alussa: 
+- `<WIFI NIMI>` on jonkin WiFi verkon nimi. (Voit käyttää esimerkiksi kännykän hotspottia)
+- `<WIFI SALASANA>` on WiFi verkon salasana.
+- `<LAITTEEN NIMI>` voi olla mikä tahansa, tämä on se tekstinpätkä joka näkyy laitteen päällä visualisaatiossa, joka näytettiin aiemmin kohdassa 9. Esim. "sensori" tai "servo"
+- `<SHIFTR TOKEN ENSIMMÄINEN OSA>` on ensimmäinen osa tokenia, alleviivattu sinisellä kohdan 8 kuvassa.
+- `<SHIFTR TOKEN TOINEN OSA>` on toinen osa tokenia, alleviivattu keltaisella kohdan 8 kuvassa.
